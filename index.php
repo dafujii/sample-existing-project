@@ -18,7 +18,8 @@ function loadCache()
 </head>
 
 <body>
-  <h1><?php echo loadCache(); ?></h1>
+  <h1>Hello</h1>
+  <h2><?php echo loadCache(); ?></h2>
 </body>
 
 </html>
