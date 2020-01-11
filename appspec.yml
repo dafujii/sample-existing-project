@@ -8,8 +8,6 @@ permissions:
     pattern: "**"
     owner: ec2-user
     group: apache
-    type:
-      - directory
   - object: /var/www/html/sample-existing-project/cache
     mode: 777
     type:
