@@ -7,3 +7,5 @@ permissions:
   - object: /var/www/html/sample-existing-project
     owner: ec2-user
     group: apache
+  - object: /var/www/html/sample-existing-project/cache
+    mode: 777
