@@ -11,6 +11,6 @@ permissions:
     type:
       - directory
   - object: /var/www/html/sample-existing-project/cache
-    mode: 0777
+    mode: 777
     type:
       - directory
