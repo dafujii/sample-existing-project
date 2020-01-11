@@ -1,13 +1,12 @@
 <?php
-function loadCache()
+const CACHE_FILE_PATH = 'cache/file.txt';
+function loadText()
 {
-  $cacheFileName = './cache/file.txt';
-  $hasCache = file_exists($cacheFileName);
-  if ($hasCache) {
-    return file_get_contents($cacheFileName);
+  if (file_exists(CACHE_FILE_PATH)) {
+    return file_get_contents(CACHE_FILE_PATH);
   }
 
-  file_put_contents($cacheFileName, "THIS IS CACHE.(" . date("Y-m-d H:i:s") . ")");
+  file_put_contents(CACHE_FILE_PATH, "THIS IS CACHE.(" . date("Y-m-d H:i:s") . ")");
   return "NOT USE CACHE.";
 }
 ?>
@@ -19,7 +18,7 @@ function loadCache()
 
 <body>
   <h1>Hello</h1>
-  <h2><?php echo loadCache(); ?></h2>
+  <h2><?php echo loadText(); ?></h2>
 </body>
 
 </html>
