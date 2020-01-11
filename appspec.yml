@@ -5,11 +5,7 @@ files:
     destination: /var/www/html/sample-existing-project
 permissions:
   - object: /var/www/html/sample-existing-project
-    pattern: "**"
     owner: ec2-user
     group: apache
-  - object: /var/www/html/sample-existing-project
-    pattern: "cache"
+  - object: /var/www/html/sample-existing-project/cache
     mode: 777
-    type:
-      - directory
